@@ -50,11 +50,11 @@ class MainActivity : AppCompatActivity() {
         duration: Long,
         interpolator: Interpolator
     ): AnimatorSet {
-        val scaleX = ObjectAnimator.ofFloat(view, "scaleX", from, to).apply {
+        val scaleX = ObjectAnimator.ofFloat(view, View.SCALE_X, from, to).apply {
             this.interpolator = interpolator
             this.duration = duration
         }
-        val scaleY = ObjectAnimator.ofFloat(view, "scaleY", from, to).apply {
+        val scaleY = ObjectAnimator.ofFloat(view, View.SCALE_Y, from, to).apply {
             this.duration = duration
             this.interpolator = interpolator
         }
